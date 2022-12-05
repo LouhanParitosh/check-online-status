@@ -21,9 +21,10 @@ function networkStatusManipulator(status) {
         statusElement.classList.add(availableStatus.offline);
         localStorage['offlineCount'] = parseInt(localStorage['offlineCount']) + parseInt(1);
         status = availableStatus.offline;
-        offLineCountElement.innerText = localStorage['offlineCount'];
+       
     }
     statusElement.innerText = `User is ${status}`;
+    offLineCountElement.innerText = localStorage['offlineCount'];
   }
 
   window.addEventListener("load", () => {
