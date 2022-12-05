@@ -1,0 +1,43 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:monospace
+}
+
+.section {
+  top:50%;
+  padding: 30px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 500;
+  height: 100%;
+  border: 2px solid grey;
+  border-radius: 4px;
+  
+}
+
+.online-status-grid {
+  opacity: 0.6;
+  float: center;
+  padding: 100px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 99px;
+}
+
+.online-status-grid.online {
+    background-color: green;
+  }
+
+.online-status-grid.offline {
+    background-color: red;
+  }
+
+@media (max-width: 600px) {
+  .online-status-grid {
+    width: 100%;
+  }
+}
