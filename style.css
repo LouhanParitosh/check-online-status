@@ -7,6 +7,7 @@ body {
   font-family:monospace
 }
 
+/* Complete Section CSS */
 .section {
   top:50%;
   padding: 30px;
@@ -17,6 +18,7 @@ body {
   
 }
 
+/* Online status section CSS */
 .online-status-grid {
   opacity: 0.6;
   float: center;
@@ -26,14 +28,17 @@ body {
   border-radius: 99px;
 }
 
+/* If online, turn background green */
 .online-status-grid.online {
     background-color: green;
   }
 
+/* If online, turn background red */
 .online-status-grid.offline {
     background-color: red;
   }
 
+/* Handling CSS for small devices */
 @media (max-width: 600px) {
   .online-status-grid {
     width: 100%;
